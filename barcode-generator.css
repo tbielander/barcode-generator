@@ -1,0 +1,148 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    float: left;
+}
+
+h2 {
+	font-size: 1.2em;
+	font-weight: normal;
+}
+
+.float-right {
+    float: right;
+}
+
+.svg-buttons {
+    padding-top: 4px;
+	cursor: pointer;
+}
+
+button#info {
+    margin-right: 8px;
+}
+
+span#info-text-icon {
+	cursor: pointer;
+}
+
+span#info-text-icon:hover {
+	font-weight: bold;
+	color: grey;
+}
+
+.generate-barcodes {
+	display: block;
+}
+
+div#info-box {
+    padding: 0.5em 1.5em;
+	margin-bottom: 2em;
+}
+
+.hidden {
+    display: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.arrow-box {
+	position: relative;
+	background: #ededed;
+    border-radius: 10px;
+}
+.arrow-box:after {
+	bottom: 100%;
+	right: 35px;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(237, 237, 237, 0);
+	border-bottom-color: #ededed;
+	border-width: 30px;
+	margin-left: -20px;
+}
+
+input#csv {
+	margin-bottom: 2em;
+    font-family: sans-serif;
+}
+
+li#input-list-item {
+	margin: 0.5em 0;
+}
+
+.dropdown, .input {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+  }
+  
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	max-height: 12em;
+	min-width: 5em;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 0.2em 1em;
+	z-index: 1;
+	overflow-y: auto;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown-header, .input-field {
+	background-color: lightgrey;
+	padding: 0.1em 0.2em;
+}
+
+.dropdown-list {
+	list-style-type: none;
+  	padding: 0;
+  	margin: 0;
+}
+
+.dropdown-list>li:hover {
+	background-color: lightgrey;
+}
+
+
+ol#settings>li {
+	margin-bottom: 1em;
+}
+
+thead {
+    background-color: lightgrey;
+}
+
+.instruction {
+	margin-bottom: 1em;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: #444;
+	padding: 0.5em 1.5em;
+	color: white;
+	background-color: #444;
+}
+
+.separator-warning, .no-input-warning, .column-warning {
+	margin: 1em 0;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 10px;
+	border-color: rgb(255, 145, 0);
+	padding: 0.5em 1.5em;
+	color: rgb(226, 120, 0);
+	background-color: white;
+}
