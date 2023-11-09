@@ -55,7 +55,8 @@ const parameters = {
             options: {
                 labels: {
                     "[Ohne Präfix]": "[Ohne Präfix]",
-                    "BAU_": "BAU_"
+                    "BAU_": "BAU_",
+                    "SWA_": "SWA_"
                 },
                 defaultValue: "BAU_"
             } 
