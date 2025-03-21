@@ -319,6 +319,9 @@ function insertBarcodes(table, mode) {
     var headPlusAnchorTitle = table.slice(0, startingRow);
     var attachedTitles = table.slice(startingRow);
     attachedTitles.forEach(function (row) {
+        if (row[settings.barcodeColumn] !== "") {
+            return;
+        }
         if (row[settings.columnToEncode]) {
             if (settings.prefix === "[Ohne Präfix]") {
                 var barcodeText = row[settings.columnToEncode];
@@ -339,7 +342,7 @@ function appendRow(rowData, element) {
     rowData.forEach(function (cellData) {
         var cell = document.createElement("td");
         if (typeof cellData === "string") {
-            cell.appendChild(document.createTextNode(cellData));
+            cell.appendChild(document.createTextNode(decodeURIComponent(encodeURIComponent(cellData))));
         } else {
             cell.appendChild(cellData);
         }
